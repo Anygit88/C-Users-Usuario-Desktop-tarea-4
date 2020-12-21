@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Inscripción</title>
+    <link rel="stylesheet" href="main.css">
+    </head>
+<header class="general">
+    <h1 class="titulo">Northside Youth Soccer League</h1> 
+     <!-- Imagen de la pagina -->
+      <!-- Logo del equipo -->
+     <img class="logo"src="IMG/nysl_logo.png" alt="logo">
+</header>
+<!-- contenido centrado en la imagen -->
+<div class=titulo1>Formulario de Inscripción</div>
+<body class="use-font">
+     
+ <!-- menu izquierdo -->
+<nav class="menu">
+    <ul>
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="about.html">About NYSL</a></li>
+        <li><a href="contacto.html">Contact</a></li>
+        <li><a href="reglas.html">Reglas del Juego y Politicas</a></li>
+        <li><a href="partidos.html"> Información de Partidos</a></li>
+        <li><a href="formularios.html"> Formulario  de  Inscripción</a></li>
+
+    </ul>                                                         
+          
+</nav>                                                       
+          
+</nav>
+
+<body>
+ <!-- Form es un contenedor para diferentes tipos de elementos de entrada 
+estos son -->
+<!-- elementos input, el más utilizado  -->
+<h4>FORMULARIO DE INSCRIPCIÓN</h4>
+<!-- target _blank pestaña nueva, _self la misma pestaña -->
+<form action="respuesta.html" target="_blank">
+    <!-- atributos -->
+    <!-- type text -->
+    <div class="grid-container-form">
+        <label for="nombre"> Nombre del Jugador</label>
+        <input type="text" id="nombre" name="Nombre del Jugador"></input>
+
+        <label for="apellido">Apellido </label>
+        <input type="text" id="apellido" name="apellido"></input>
+    </div>
+    <div class="grid-container-form">
+        <label for="direccion">Dirección </label>
+        <input type="text" id="direccion" name="direccion" class="direccion"></input>
+    </div>
+    <div class="grid-container-form">
+        <label for="ciudad">Ciudad </label>
+        <input type="text" id="ciudad" name="ciudad" class="ciudad"></input>
+    </div>
+    <div class="grid-container-form">
+        <label for="codigo">Código Postal</label>
+        <input type="number" id="codigo" name="codigo"></input>
+
+        <label for="fechanacimiento">Fecha de nacimiento</label>
+        <input type="date" id="fechanacimiento" name="fechanacimiento"></input>
+    </div>
+    <!-- type check box -->
+    <div class="grid-container-form">
+        <dl>
+            <dt>Género</dt>
+            <dt>
+                
+                <input type="checkbox" id="mujer" name="mujer" value="mujer">
+                <label for="mujer"> Mujer</label>
+    
+                <input type="checkbox" id="hombre" name="hombre" value="hombre">
+                <label for="hombre"> Hombre</label>
+            </dt>
+    </div>
+   
+    <div class="grid-container-form">
+        <dl>
+            <dt> <b>¿De que escuela vives mas cerca?</b></dt>
+            <dd><b>Escuela más cercana</b></dd>
+            <dt>
+                <input type="checkbox" id="aj" name="aj" value="aj">
+                <label for="aj"> AJ Katzenmaier</label>
+
+                <input type="checkbox" id="marjorie" name="marjorie" value="marjorie">
+                <label for="marjorie"> Marjorie P Hart</label>
+            </dt>
+            <dt>
+                <input type="checkbox" id="greenbay" name="greenbay" value="greenbay">
+                <label for="greenbay"> Greenbay</label>
+
+                <input type="checkbox" id="north" name="north" value="north">
+                <label for="north"> North Elementary</label>
+            </dt>
+            <dt>
+                <input type="checkbox" id="howard" name="howard" value="howard">
+                <label for="howard"> Howard A Yeager</label>
+
+                <input type="checkbox" id="south" name="south" value="south">
+                <label for="south"> South Elementary</label>
+            </dt>
+        <div>
+            
+        </div>
+        <div class="grid-container-form-texto">
+            <dd><b>¿Qué posición(es) juegas normalmente? (marque todas las que correspondan)</b></dd>
+            <dt>
+                <input type="checkbox" id="delantero" name="delantero" value="delantero">
+                <label for="delantero"> Delantero</label>
+
+                <input type="checkbox" id="mediocampo" name="mediocampo" value="mediocampo">
+                <label for="mediocampo"> Mediocampo</label>
+            </dt>
+            <dt>
+                <input type="checkbox" id="portero" name="portero" value="portero">
+                <label for="portero"> Portero</label>
+
+                <input type="checkbox" id="defensa" name="defensa" value="defensa">
+                <label for="defensa"> Defensa</label>
+
+        </dl>
+        </div>
+
+        <div class="grid-container-form">
+            <dl>
+                <dt> <b>Tamaño del Uniforme</b></dt>
+                    <dt>
+                    <input type="checkbox" id="p" name="p" value="p">
+                    <label for="p"> Niño P</label>
+    
+                    <input type="checkbox" id="mediano" name="mediano" value="mediano">
+                    <label for="mediano"> Mediano</label>
+                </dt>
+                <dt>
+                    <input type="checkbox" id="greenbay" name="greenbay" value="greenbay">
+                    <label for="greenbay"> Niño M</label>
+    
+                    <input type="checkbox" id="grande" name="grande" value="grande">
+                    <label for="grande"> Grande</label>
+                </dt>
+                <dt>
+                    <input type="checkbox" id="g" name="g" value="g">
+                    <label for="g"> Niño G</label>
+    
+                    <input type="checkbox" id="eg" name="eg" value="eg">
+                    <label for="eg"> Extra Grande</label>
+                </dt>
+        </div>
+            
+    </div>
+    <!-- elementos select -->
+    <h4>Permiso para jugar</h4>
+    <p> Yo, el padre o tutor del solicitante de registro menor, estoy de acuerdo en que el solicitante de registro y yo acataremos todas las reglas de la Northside Youth Soccer League (NYSL). Al reconocer la posibilidad de lesiones físicas asociadas al fútbol y en consideración a la"Liga" que acepta al solicitante de registro 
+        para sus programas y actividades de fútbol, Por la presente libero y descargo a NYSL, sus empleados y  personal asociado y voluntarios, incluyendo las instalaciones utilizadas para prácticas y juegos, contra 
+        cualquier reclamo por o en nombre del solicitante de registro como resultado de la participación del solicitante del programa a o en el transporte desde o hacia las actividades patrocinadas por NYSL.  </p>
+        <p>Al firmar a continuación, acuerdo y autorizo lo anterior. Además, al firmar a continuación, reconozco que he leído la política de cancelación y acepto sus términos. </p>
+    
+        <div>
+            <dl>
+                <dt>
+                    <label for="firma">Firma del Padre/Tutor </label>
+                    <input type="text" id="firma" name="firma" class="firma"></input>
+    
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha"></input>
+                </dt>
+             
+        </div>
+
+    <!-- boton enviar -->
+    <div>
+      
+        <input type="submit" value="Enviar">
+    </div>
+
+</form>
+
+
+</body>
+</html>
